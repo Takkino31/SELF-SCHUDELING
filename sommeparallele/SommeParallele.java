@@ -28,7 +28,6 @@ public class SommeParallele {
             final int end = (i +1) * ITERATION_SIZE -1;
 //            final int end = (i == NUM_THREADS - 1) ? totalSize : (i + 1) * iterationSize; // Le dernier thread prend le reste du tableau
 
-
             int[] tab = Arrays.copyOfRange(tabInt,start,end);
 
             workers[i] = new SommeParalleleWorker(tab);
